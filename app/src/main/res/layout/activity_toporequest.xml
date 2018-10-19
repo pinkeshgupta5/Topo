@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/estimate_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:id="@+id/back_layout"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/back" />
+                </RelativeLayout>
+
+                <com.dhivi.inc.topo.utils.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@+id/back_layout"
+                    android:text="@string/toporequest"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/settings_textview"
+                    android:visibility="visible"
+                    app:font_text="@string/fontTitlelight" />
+
+                <RelativeLayout
+                    android:id="@+id/delete_layout"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/delete" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/profile_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/defalut_profile"
+                    android:scaleType="centerCrop" />
+
+
+                <com.dhivi.inc.topo.utils.FontTextView
+                    android:id="@+id/name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/profile_imageview"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@+id/profile_imageview"
+                    android:singleLine="true"
+                    android:text="Pavan kumar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/header"
+                    android:visibility="visible"
+                    app:font_text="@string/fontTitlelight" />
+
+                <com.dhivi.inc.topo.utils.FontTextView
+                    android:id="@+id/ph_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_textview"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/profile_imageview"
+                    android:singleLine="true"
+                    android:text="91 9066323302"
+                    android:textColor="@color/list_textcolor"
+                    android:textSize="@dimen/verysmall_font"
+                    android:visibility="visible"
+                    app:font_text="@string/fontTitlelight" />
+
+                <com.dhivi.inc.topo.utils.FontTextView
+                    android:id="@+id/email_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ph_textview"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toRightOf="@+id/profile_imageview"
+                    android:singleLine="true"
+                    android:text="pavanraj@gmail.com"
+                    android:textColor="@color/list_textcolor"
+                    android:textSize="@dimen/verysmall_font"
+                    android:visibility="gone"
+                    app:font_text="@string/fontTitlereguler" />
+
+            </RelativeLayout>
+
+            <com.dhivi.inc.topo.utils.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/messages"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verysmall_font"
+                android:visibility="visible"
+                app:font_text="@string/fontTitlereguler" />
+
+            <com.dhivi.inc.topo.utils.FontTextView
+                android:id="@+id/messages_res_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/list_textcolor"
+                android:textSize="@dimen/normaltextview"
+                android:visibility="visible"
+                app:font_text="@string/fontTitlelight" />
+
+            <com.dhivi.inc.topo.utils.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/selecttopo"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verysmall_font"
+                android:visibility="visible"
+                app:font_text="@string/fontTitlereguler" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mytopo_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/estimate_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/search_layout"
+        android:layout_above="@+id/bttom_layout"
+        android:layout_height="50dp">
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/Estimated_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="Accessing Period"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_textview"
+            android:visibility="visible"
+            app:font_text="@string/fontTitlereguler" />
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/down" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/segmented_time_intervels"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/materialSeekBar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:visibility="gone">
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/first_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3hr"
+            android:textColor="@color/black"
+            android:textSize="@dimen/verysmall_font"
+            app:font_text="@string/fontTitlereguler" />
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/second_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12hr"
+            android:textColor="@color/list_textcolor"
+            android:textSize="@dimen/verysmall_font"
+            app:font_text="@string/fontTitlereguler" />
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/third_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="24hr"
+            android:textColor="@color/list_textcolor"
+            android:textSize="@dimen/verysmall_font"
+            app:font_text="@string/fontTitlereguler" />
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/fourth_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="always"
+            android:textColor="@color/list_textcolor"
+            android:textSize="@dimen/verysmall_font"
+            app:font_text="@string/fontTitlereguler" />
+
+    </LinearLayout>
+
+    <app.minimize.com.seek_bar_compat.SeekBarCompat
+        android:id="@+id/materialSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/bttom_layout"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:maxHeight="300sp"
+        android:visibility="gone"
+        app:progressBackgroundColor="#7A8994"
+        app:progressColor="@color/black"
+        app:thumbAlpha="1.0"
+        app:thumbColor="@color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/bttom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.dhivi.inc.topo.utils.FontButton
+            android:id="@+id/sharevia_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bluebgborder"
+            android:letterSpacing="0.06"
+            android:stateListAnimator="@null"
+            android:text="@string/sharevia"
+            android:textAllCaps="true"
+            android:textColor="@color/login_textcolor"
+            android:textSize="@dimen/buttontext"
+            android:visibility="gone"
+            app:font_text="@string/fontTitlereguler" />
+
+        <com.dhivi.inc.topo.utils.FontButton
+            android:id="@+id/sendtopo_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/whiteroundedbg"
+            android:letterSpacing="0.06"
+            android:stateListAnimator="@null"
+            android:text="@string/sendtopo"
+            android:textAllCaps="true"
+            android:textColor="@color/login_textcolor"
+            android:textSize="@dimen/buttontext"
+            app:font_text="@string/fontTitlereguler" />
+
+    </LinearLayout>
+</RelativeLayout>

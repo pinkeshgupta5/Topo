@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "591279093262",
+    "firebase_url": "https://topo-fe47e.firebaseio.com",
+    "project_id": "topo-fe47e",
+    "storage_bucket": "topo-fe47e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591279093262:android:048eb8d4e28e4f3d",
+        "android_client_info": {
+          "package_name": "com.dhivitopo.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591279093262-ppcevd0ucnubgvr8i31f4gnf2atmtgcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2fqig-0BXuVQjTrwwbq8vY7ymSFka9Ac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591279093262:android:4da83f14dbff038d",
+        "android_client_info": {
+          "package_name": "com.dhivi.inc.fcmeample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591279093262-8hphuplsjoj6urhv5sr0ei05utr3b98i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhivi.inc.fcmeample",
+            "certificate_hash": "2cd4fb85cbde4722a87dc2c3371413e20790e574"
+          }
+        },
+        {
+          "client_id": "591279093262-ppcevd0ucnubgvr8i31f4gnf2atmtgcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2fqig-0BXuVQjTrwwbq8vY7ymSFka9Ac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591279093262-ppcevd0ucnubgvr8i31f4gnf2atmtgcc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591279093262:android:6d3e6b1984648f73",
+        "android_client_info": {
+          "package_name": "com.dhivi.inc.topo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591279093262-al846oiqnoed2kikrk09ko1fp7u5qi34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhivi.inc.topo",
+            "certificate_hash": "2cd4fb85cbde4722a87dc2c3371413e20790e574"
+          }
+        },
+        {
+          "client_id": "591279093262-ppcevd0ucnubgvr8i31f4gnf2atmtgcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2fqig-0BXuVQjTrwwbq8vY7ymSFka9Ac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591279093262-ppcevd0ucnubgvr8i31f4gnf2atmtgcc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

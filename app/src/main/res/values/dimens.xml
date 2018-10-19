@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="backarrow">20sp</dimen>
+    <dimen name="edittext">14sp</dimen>
+    <dimen name="buttontext">16sp</dimen>
+    <dimen name="titletextview">20sp</dimen>
+    <dimen name="normaltextview">14sp</dimen>
+    <dimen name="header">16sp</dimen>
+    <dimen name="small_font">14sp</dimen>
+    <dimen name="verysmall_font">12sp</dimen>
+    <dimen name="veryverysmall_font">11sp</dimen>
+    <dimen name="searchedittext">16sp</dimen>
+    <dimen name="settings_textview">15sp</dimen>
+    <dimen name="welcome_textview">22sp</dimen>
+    <dimen name="countrytext">20sp</dimen>
+    <dimen name="map_height">230dp</dimen>
+
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/searchbg">
+
+            <ImageView
+                android:id="@+id/search_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search" />
+
+            <com.dhivi.inc.topo.utils.FontEditText
+                android:id="@+id/search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/search_imageview"
+                android:background="@android:color/transparent"
+                android:hint="@string/searchusers"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/searchcursor"
+                android:textSize="@dimen/searchedittext"
+                app:font_text="@string/fontextralight" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/estimate_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/search_layout"
+        android:layout_height="50dp">
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/Estimated_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Accessing Period"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_textview"
+            android:visibility="visible"
+            app:font_text="@string/fontTitlereguler" />
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/down" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/segmented_time_intervels"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/estimate_layout"
+        android:weightSum="4"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/first_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/verysmall_font"
+            android:text="3hr"
+            app:font_text="@string/fontTitlereguler"/>
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/second_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/list_textcolor"
+            android:textSize="@dimen/verysmall_font"
+            android:text="12hr"
+            app:font_text="@string/fontTitlereguler"/>
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/third_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/list_textcolor"
+            android:textSize="@dimen/verysmall_font"
+            android:text="24hr"
+            app:font_text="@string/fontTitlereguler"/>
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/fourth_segment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/list_textcolor"
+            android:textSize="@dimen/verysmall_font"
+            android:text="Always"
+            app:font_text="@string/fontTitlereguler"/>
+
+    </LinearLayout>
+
+
+    <app.minimize.com.seek_bar_compat.SeekBarCompat
+        android:id="@+id/materialSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/segmented_time_intervels"
+        android:maxHeight="300sp"
+        app:progressColor="@color/black"
+        android:visibility="gone"
+        app:progressBackgroundColor="#7A8994"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        app:thumbColor="@color/black"
+        app:thumbAlpha="1.0"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/materialSeekBar"
+        android:layout_above="@+id/sendinstatnttopo_button"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/topousers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/verysmall_font"
+            app:font_text="@string/fontTitlereguler" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/topousers_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/noresults"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/noresultfound"
+            android:visibility="gone"
+            android:textSize="@dimen/settings_textview"
+            app:font_text="@string/fontTitlelight" />
+    </LinearLayout>
+
+
+    <com.dhivi.inc.topo.utils.FontButton
+        android:id="@+id/sendinstatnttopo_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/whiteroundedbg"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:letterSpacing="0.06"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/sendtopo"
+        android:textAllCaps="true"
+        android:textColor="@color/login_textcolor"
+        android:textSize="@dimen/buttontext"
+        android:stateListAnimator="@null"
+        app:font_text="@string/fontTitlereguler" />
+
+
+
+</RelativeLayout>

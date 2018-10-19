@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- <declare-styleable name="TextView">
+         <attr name="font" format="string" />
+     </declare-styleable>-->
+    <declare-styleable name="TextView">
+        <attr name="font_text" format="string" />
+    </declare-styleable>
+    <!--apikey google maps-->
+    <string name="google_maps_key">AIzaSyAY7lXTVI_kPKxF6XucfwjiUwgReLBE1Ko</string>
+    <!--<string name="google_map_places_key">AIzaSyCp5q7zJSnYHPmtkvF4-yksK6gkD2odB5g</string>-->
+    <string name="google_map_places_key">AIzaSyD36XAF0QdOKmxnkuhyRhjD7xD1RsQPqMc</string>
+
+    <!--<string name="profile_image">https://dzgquh4f3r089.cloudfront.net/Topo/Assets/img/userProfiles/</string>-->
+    <string name="profile_image">https://dzgquh4f3r089.cloudfront.net/DhiviExpress/DeliveryDocs/</string>
+
+    <string name="fontTitleText" translatable="false">fonts/montserrat/Montserrat-Light.otf</string>
+    <string name="fontTitlereguler" translatable="false">fonts/montserrat/Montserrat-Regular.otf</string>
+    <string name="fontTitlelight" translatable="false">fonts/montserrat/Montserrat-Light.otf</string>
+    <string name="fontextralight" translatable="false">fonts/montserrat/Montserrat-ExtraLight.otf</string>
+    <string name="fontmetalic" translatable="false">fonts/MaterialIcons-Regular.ttf</string>
+    <string name="fontbutton" translatable="false">fonts/montserrat/Montserrat-Regular.otf</string>
+    <string name="splsh" translatable="false">fonts/Lato-Bold.ttf</string>
+    <string name="fontTextMedium" translatable="false">fonts/montserrat/Montserrat-Medium.otf</string>
+    <string name="fontTextBold" translatable="false">fonts/montserrat/Montserrat-Bold.otf</string>
+    <string name="montserrat">Montserrat-Light.otf</string>
+
+    <string name="FACEBOOK_APP_ID">151917075536055</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">2e1379769e30903f536685ce3a38562c</string>
+
+    <string name="privacy_url">https://www.topoapp.in/privacy.php</string>
+    <string name="terms_url">https://www.topoapp.in/tnc.php</string>
+
+</resources>

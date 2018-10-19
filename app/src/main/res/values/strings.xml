@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Topo</string>
+
+
+    <!--fragments-->
+
+    <string name="home">home</string>
+    <string name="settings">settings</string>
+    <string name="share">share</string>
+    <string name="topo">topo</string>
+
+
+    <string name="ok">Ok</string>
+    <string name="cancel">CANCEL</string>
+    <!-- errors -->
+    <string name="network_error">"No network available. Please check your data network or try again later"</string>
+    <string name="server_error">"Application is currently unavailable. Please try again later"</string>
+
+
+
+    <string name="login">login</string>
+    <string name="signup">signup</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="username">Mobile</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="fpwd">Forgot Password</string>
+    <string name="reset">reset</string>
+    <string name="updateusername">Update user name</string>
+    <string name="continuewithotp">Continue With OTP</string>
+    <string name="verifyotp">Verify OTP</string>
+    <string name="createdigitaladdress">Get your 1st digital address</string>
+    <string name="digitalbutton">Get now</string>
+    <string name="congratesmsg">Digital Address Created</string>
+    <string name="helpmsg">Help your friends to get their digital address</string>
+    <string name="clicktoshatre">Click to share</string>
+
+
+    <string name="search">Search Topos</string>
+    <string name="searchusers">Search Users</string>
+    <string name="accessreq">TOPO REQUESTS</string>
+    <string name="savedtopo">SAVED TOPOS</string>
+    <string name="mytopo">MY TOPOS</string>
+    <string name="instanttopo">INSTANT TOPOS</string>
+    <string name="arrivingtopo">ARRIVING</string>
+    <string name="topopin">TOPO PIN</string>
+
+    <string name="help">Help</string>
+    <string name="refer">Refer</string>
+    <string name="access">Access List</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="termscond">Terms &amp; Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="copyright">&#169; Dhivi </string>
+    <string name="version">Version</string>
+
+
+    <string name="toporequest">TOPO REQUEST</string>
+    <string name="messages">MESSAGES</string>
+    <string name="selecttopo">SELECT TOPO</string>
+    <string name="messages_res">Hai, Send me your home location.</string>
+    <string name="sharevia">SHARE VIA</string>
+    <string name="sendtopo">SEND TOPO</string>
+    <string name="sendrequesttopo">SEND REQUEST</string>
+
+    <string name="setlocation">SET LOCATION</string>
+    <string name="editlocation">UPDATE LOCATION</string>
+    <string name="createtopo">CREATE TOPO</string>
+    <string name="updatetopo">UPDATE TOPO</string>
+    <string name="settopoid">SET TOPO ID</string>
+    <string name="updatedetails">UPDATE DETAILS</string>
+    <string name="topoid">Topo id</string>
+    <string name="flat">Flat/Door</string>
+
+    <string name="topousers">SELECT TOPO USERS</string>
+    <string name="sendinstatnttopo">SEND INSTANT TOPO</string>
+
+    <string name="profile">PROFILE</string>
+    <string name="updateprofile">UPDATE PROFILE</string>
+
+    <string name="changepassword">CHANGE PASSWORD</string>
+    <string name="currentpassword">CURRENT PASSWORD</string>
+    <string name="newpassword">NEW PASSWORD</string>
+    <string name="confirmnewpassword">CONFiRM NEW PASSWORD</string>
+    <string name="updatepassword">UPDATE PASSWORD</string>
+
+    <string name="comments">Comments</string>
+    <string name="submit">SUBMIT</string>
+
+
+    <string name="shareyourlove">SHARE YOUR LOVE</string>
+    <string name="feedbacksug">Feedback/Suggestions</string>
+
+    <string name="invitemsg">Invite Friends to Topo</string>
+    <string name="refermsg">You\'ll each get 1 when you refer</string>
+    <string name="invitefrnds">INVITE FRIENDS</string>
+
+    <string name="netfail">It appears there is no network connection. Please check that you have Internet connectivity and try again.</string>
+    <string name="netfail_title">Network Info</string>
+
+    <string name="public_access">Public</string>
+    <string name="private_access">Private</string>
+    <string name="message">Ex: Send me your home address</string>
+    <string name="business">Business</string>
+    <string name="businesstype">Business Type</string>
+    <string name="workingdays">Working Days</string>
+    <string name="workinghours">Working Hours</string>
+    <string name="businessname">Business Name</string>
+    <string name="businessnumber">Business Number</string>
+
+    <string name="requesttopo">Request Topo</string>
+    <string name="create_topo">Create Topo</string>
+
+    <string name="errormsg"> If you want access ,Send Request</string>
+
+    <string name="noresultfound">No Results Found</string>
+    <string name="notopos">No Topos</string>
+
+    <string name="addtopo">Add Topo</string>
+    <string name="request">Request</string>
+    <string name="instatnt">Instant</string>
+
+    <string name="cabs">CABS</string>
+    <string name="nearby">NEAR BY</string>
+
+
+    <string name="mapurl">https://dzgquh4f3r089.cloudfront.net/Topo/gmaps/%1$s_100_%2$s</string>
+    <string name="mapurl_full">https://dzgquh4f3r089.cloudfront.net/Topo/gmaps/%1$s_500_%2$s</string>
+</resources>

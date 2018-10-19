@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/location_imageview"
+            android:background="@drawable/searchbg">
+
+            <ImageView
+                android:id="@+id/search_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search" />
+
+            <com.dhivi.inc.topo.utils.FontEditText
+                android:id="@+id/search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/search_imageview"
+                android:background="@android:color/transparent"
+                android:hint="@string/search"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/searchcursor"
+                android:textSize="@dimen/searchedittext"
+                app:font_text="@string/fontextralight" />
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            ></WebView>
+        <ImageView
+            android:id="@+id/location_imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+    <com.dhivi.inc.topo.utils.FontTextView
+        android:id="@+id/noresults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/notopos"
+        android:visibility="gone"
+        android:textSize="@dimen/settings_textview"
+        app:font_text="@string/fontTitlelight" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.dhivi.inc.topo.utils.FontTextView
+                android:id="@+id/mytopo_textview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/mytopo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verysmall_font"
+                app:font_text="@string/fontTitlereguler" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mytopo_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+            <com.dhivi.inc.topo.utils.FontTextView
+                android:id="@+id/saved_textview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/savedtopo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verysmall_font"
+                app:font_text="@string/fontTitlereguler" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/savedtopo_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                ></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

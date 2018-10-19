@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/total_layout"
+        android:layout_width="105dp"
+        android:layout_margin="10dp"
+        android:layout_height="120dp">
+
+
+        <ImageView
+            android:id="@+id/horizontal_imageview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:outlineProvider="none"
+            android:scaleType="centerCrop"
+
+            />
+
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/horizontal_textview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/cardview"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:outlineProvider="none"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_font"
+            app:font_text="@string/fontTitlelight" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/list_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:scaleType="centerCrop" />
+
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/list_imageview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/list_imageview"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header"
+            android:visibility="visible"
+            app:font_text="@string/fontTitlereguler" />
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/desc_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_textview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/list_imageview"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/list_textcolor"
+            android:textSize="@dimen/verysmall_font"
+            android:visibility="visible"
+            app:font_text="@string/fontTitlereguler" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"></View>
+    </RelativeLayout>
+
+</LinearLayout>

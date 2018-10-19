@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/list_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:scaleType="centerCrop"
+            />
+
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/list_imageview"
+            android:visibility="visible"
+            android:layout_alignTop="@+id/list_imageview"
+            android:textSize="@dimen/header"
+            app:font_text="@string/fontTitlelight" />
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/desc_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_textcolor"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/list_imageview"
+            android:visibility="visible"
+            android:layout_below="@+id/title_textview"
+            android:textSize="@dimen/verysmall_font"
+            app:font_text="@string/fontTitlelight" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"></View>
+    </RelativeLayout>
+
+</LinearLayout>

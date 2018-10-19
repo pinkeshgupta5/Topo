@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/refer"
+        android:id="@+id/imageView" />
+
+    <com.dhivi.inc.topo.utils.FontTextView
+        android:id="@+id/referamount_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/header"
+        android:layout_alignTop="@+id/imageView"
+        android:textColor="@color/white"
+        android:layout_marginTop="78dp"
+        app:font_text="@string/fontTitlereguler"/>
+
+
+    <com.dhivi.inc.topo.utils.FontTextView
+        android:id="@+id/share_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/invitemsg"
+        android:textSize="@dimen/header"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        app:font_text="@string/fontTitlereguler"/>
+
+    <com.dhivi.inc.topo.utils.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refermsg"
+        android:textSize="@dimen/header"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/share_text"
+        android:layout_marginTop="10dp"
+        app:font_text="@string/fontTitlereguler"/>
+
+    <com.dhivi.inc.topo.utils.FontButton
+        android:id="@+id/invite_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/forgot_bg"
+        android:letterSpacing="0.06"
+        android:stateListAnimator="@null"
+        android:text="@string/invitefrnds"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/buttontext"
+        app:font_text="@string/fontTitlereguler" />
+
+</RelativeLayout>

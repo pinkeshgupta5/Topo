@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+
+    <color name="transperent">#00000000</color>
+    <color name="appbackground">#db0d36</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#373e43</color>
+    <color name="lightblack">#7a8994</color>
+    <color name="green">#17a907</color>
+    <color name="searchcolor">#aeb6bf</color>
+    <color name="blue">#316ac5</color>
+    <color name="red">#e63533</color>
+    <color name="light_gray">#e9ebee</color>
+    <color name="light_black">#333333</color>
+    <color name="light_white">#e9ebee</color>
+    <color name="button_bg">#615c5b</color>
+    <color name="text_color">#000000</color>
+    <color name="light_icon_color">#a7a7a7</color>
+    <color name="button_text_color">#ffffff</color>
+    <color name="divider">#e3e3e3</color>
+    <color name="login_textcolor">#346790</color>
+    <color name="list_textcolor">#7a8994</color>
+    <color name="selected_color">#e5e5e5</color>
+    <color name="cardview_shadow_start_color">#ffffff</color>
+    <color name="cardview_shadow_end_color">#ffffff</color>
+    <color name="forgotpwdcolor">#2996aa</color>
+</resources>

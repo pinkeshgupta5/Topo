@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shadow="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:textColor="@android:color/white">
+
+    <com.dhivi.inc.topo.utils.MyLinearLayout
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/circle"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/circle_shadow"
+                android:layout_centerHorizontal="true"/>
+            <View
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:background="@drawable/circle"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/shadow_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle"
+            android:layout_centerHorizontal="true"
+            android:text="sdsdsds"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:font_text="@string/fontTextMedium" />
+
+    </com.dhivi.inc.topo.utils.MyLinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dhivi.inc.topo.utils.FontTextView
+        android:id="@+id/header_titie"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/settings_textview"
+        android:visibility="visible"
+        app:font_text="@string/fontTitlelight" />
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/multiselection_recycler"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </android.support.v7.widget.RecyclerView>
+
+
+    <com.dhivi.inc.topo.utils.FontButton
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whiteroundedbg"
+        android:letterSpacing="0.06"
+        android:stateListAnimator="@null"
+        android:text="@string/ok"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/login_textcolor"
+        android:textSize="@dimen/buttontext"
+        app:font_text="@string/fontTitlereguler" />
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/topolayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/back_layout"
+            android:layout_width="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+        <com.dhivi.inc.topo.utils.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/profile"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_layout"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_textview"
+            android:visibility="visible"
+            app:font_text="@string/fontTitlelight" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/topolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/defalut_profile"/>
+
+            <ImageView
+                android:id="@+id/edit_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/profile_image"
+                android:background="@drawable/camera"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/editbackground_black">
+
+            <ImageView
+                android:id="@+id/name_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/name_black" />
+
+            <com.dhivi.inc.topo.utils.FontEditText
+                android:id="@+id/name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/name_icon"
+                android:background="@android:color/transparent"
+                android:gravity="bottom"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textCursorDrawable="@drawable/searchcursor"
+                android:textSize="@dimen/edittext"
+                app:font_text="@string/fontTitlelight" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/signup_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/editbackground_black">
+
+            <ImageView
+                android:id="@+id/signup_email_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/email_black" />
+
+            <com.dhivi.inc.topo.utils.FontEditText
+                android:id="@+id/signup_email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/signup_email_icon"
+                android:background="@android:color/transparent"
+                android:gravity="bottom"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textCursorDrawable="@drawable/searchcursor"
+                android:textSize="@dimen/edittext"
+                app:font_text="@string/fontTitlelight" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/editbackground_black">
+
+            <ImageView
+                android:id="@+id/mobile_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/mobile_black" />
+
+            <com.dhivi.inc.topo.utils.FontEditText
+                android:id="@+id/mobile_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/mobile_icon"
+                android:background="@android:color/transparent"
+                android:gravity="bottom"
+                android:hint="@string/mobile"
+                android:maxLength="12"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textCursorDrawable="@drawable/searchcursor"
+                android:textSize="@dimen/edittext"
+                app:font_text="@string/fontTitlelight" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/signup_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"
+            android:background="@drawable/editbackground_black">
+
+            <ImageView
+                android:id="@+id/signup_pwd_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/password_black" />
+
+            <com.dhivi.inc.topo.utils.FontTextView
+                android:id="@+id/signup_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/signup_pwd_icon"
+                android:background="@android:color/transparent"
+                android:gravity="bottom"
+                android:text="password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textCursorDrawable="@drawable/searchcursor"
+                android:textSize="@dimen/edittext"
+                app:font_text="@string/fontTitlelight" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/frontarrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bttom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <com.dhivi.inc.topo.utils.FontButton
+            android:id="@+id/updateprofile_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/whiteroundedbg"
+            android:letterSpacing="0.06"
+            android:text="@string/updateprofile"
+            android:textAllCaps="true"
+            android:textColor="@color/login_textcolor"
+            android:textSize="@dimen/buttontext"
+            android:stateListAnimator="@null"
+            app:font_text="@string/fontTitlereguler" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa252626"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+
+
+            <RelativeLayout
+                android:id="@+id/cross_layout"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/close" />
+            </RelativeLayout>
+
+
+
+            <com.dhivi.inc.topo.utils.FontButton
+                android:id="@+id/changeprofilepic_button"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whiteroundedbg"
+                android:text="Change Photo"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/login_textcolor"
+                android:layout_marginTop="70dp"
+                android:textSize="@dimen/buttontext"
+                android:stateListAnimator="@null"
+                app:font_text="@string/fontTitlereguler" />
+
+
+            <com.dhivi.inc.topo.utils.FontButton
+                android:id="@+id/removeprofilepic_button"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/whiteroundedbg"
+                android:letterSpacing="0.06"
+                android:layout_below="@+id/changeprofilepic_button"
+                android:stateListAnimator="@null"
+                android:text="Remove Photo"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:textAllCaps="true"
+                android:textColor="@color/login_textcolor"
+                android:textSize="@dimen/buttontext"
+                app:font_text="@string/fontTitlereguler" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

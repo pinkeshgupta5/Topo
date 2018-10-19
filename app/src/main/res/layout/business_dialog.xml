@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dhivi.inc.topo.utils.FontTextView
+        android:id="@+id/header_titie"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/settings_textview"
+        android:visibility="visible"
+        app:font_text="@string/fontTitlelight" />
+
+    <ListView
+        android:id="@+id/busness_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <ListView
+        android:id="@+id/workinghours_to_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </ListView>
+
+</LinearLayout>

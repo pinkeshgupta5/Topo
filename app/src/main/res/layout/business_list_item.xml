@@ -1,0 +1,11 @@
+<com.dhivi.inc.topo.utils.FontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="14sp"
+    android:layout_marginLeft="25dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="25dp"
+    android:text="dfdfd"
+    android:textColor="@color/black"
+    app:font_text="@string/fontTitlelight" />

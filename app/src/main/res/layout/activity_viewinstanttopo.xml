@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/map_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop" />
+
+
+        <RelativeLayout
+            android:id="@+id/topolayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/topbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:id="@+id/back_layout"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/back" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/edit_layout"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="40dp"
+                    android:layout_toLeftOf="@+id/delete_layout">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/edit" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/delete_layout"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/delete_black" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tab"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/map_imageview"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/viewtopobackground"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/favtopo_layout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:visibility="gone"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/favtopo_imageview"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:background="@drawable/topos" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navigation_layout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/navigation_imageview"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/navigate" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/forward_layout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="20.41"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/forward_imageview"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:background="@drawable/forward" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_layout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="20"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/share_imageview"
+                    android:layout_width="21dp"
+                    android:layout_height="17dp"
+                    android:background="@drawable/share" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+
+                    <com.dhivi.inc.topo.utils.FontTextView
+                        android:id="@+id/title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/buttontext"
+                        android:visibility="visible"
+                        app:font_text="@string/fontTitlelight" />
+
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/cabs_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:background="@drawable/cabs" />
+
+                                <com.dhivi.inc.topo.utils.FontTextView
+                                    android:id="@+id/cab_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:maxLines="1"
+                                    android:text="@string/cabs"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/small_font"
+                                    android:visibility="visible"
+                                    app:font_text="@string/fontTitlelight" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/cabs_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/black"></View>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/nearby_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:background="@drawable/nearby" />
+
+                                <com.dhivi.inc.topo.utils.FontTextView
+                                    android:id="@+id/nearby_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:maxLines="1"
+                                    android:text="@string/nearby"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/small_font"
+                                    android:visibility="visible"
+                                    app:font_text="@string/fontTitlelight" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/nearby_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:visibility="gone"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/black"></View>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/cabs_recycler_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/cabs_recycler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"></android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/nearme_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.dhivi.inc.topo.utils.FontTextView
+                    android:id="@+id/errror_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="start"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/buttontext"
+                    android:visibility="visible"
+                    app:font_text="@string/fontTitlereguler" />
+
+
+                <com.dhivi.inc.topo.utils.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/errror_textview"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="start"
+                    android:text="@string/errormsg"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normaltextview"
+                    android:visibility="visible"
+                    app:font_text="@string/fontTitlelight" />
+
+
+                <com.dhivi.inc.topo.utils.FontButton
+                    android:id="@+id/sendrequest_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/forgot_bg"
+                    android:letterSpacing="0.06"
+                    android:stateListAnimator="@null"
+                    android:text="@string/sendrequesttopo"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/buttontext"
+                    app:font_text="@string/fontTitlereguler" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
